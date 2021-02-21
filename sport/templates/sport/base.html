@@ -16,14 +16,30 @@
 </head>
 <body>
 
+
 <header class="header">
-    {% include 'sport/component/navbar.html' %}
+
+    <div class="navigate">
+        {% include 'sport/component/navbar.html' %}
+    </div>
+    <div class="header__body">
+        <div class="container">
+            <h1>wind power</h1>
+            <h2>Lorem, ipsum & dolor</h2>
+            <a href="#">learn more</a>
+        </div>
+    </div>
 </header>
-<section></section>
-<section></section>
-<footer>
+
+
+{% block content %}
+
+{% endblock %}
+
+
+<div class="footer">
     {% include 'sport/component/footer.html' %}
-</footer>
+</div>
 
 
 {#<script src="{% static '' %}"></script>#}

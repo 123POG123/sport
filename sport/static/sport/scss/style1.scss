@@ -3,7 +3,29 @@
 @import "normalize";
 @import "header";
 @import "navbar";
+@import "footer";
+@import "home";
+@import "about_us";
+
+
+.container {
+  max-width: 1650px;
+  margin-left: auto;
+  padding: 0 10%;
+}
 
 body {
-  background-color: #be74d2;
+  margin: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .header {
+    flex-grow: 1;
+  }
+
+  .footer {
+    flex-shrink: 0;
+  }
 }

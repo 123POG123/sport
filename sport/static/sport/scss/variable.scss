@@ -1,3 +1,11 @@
 
 $lato :sans-serif;
-$sans :'Lato'
+$sans :'Lato';
+
+@mixin footer_link{
+  color: #7f8e9c;
+  font-family: $lato;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: none;
+}
