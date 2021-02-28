@@ -92,12 +92,9 @@
 
       }
 
-      p {
-        font-size: 20px;
-        line-height: 22px;
-        color: #7f8c8d;
-        font-family: $lato;
-      }
+     p{
+       @include p_p
+     }
     }
 
     .e_nd_body__left {

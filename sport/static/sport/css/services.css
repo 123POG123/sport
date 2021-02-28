@@ -1,2 +1,2 @@
-.nav_list li:first-child a {
+.nav_list li:nth-child(3) a {
   color: #ffffff !important; }

@@ -14,9 +14,14 @@
 
         .nav__logo {
 
+
+          a {
+            color: #ffff!important;
+          }
+
           &:hover a {
             transition: .4s ease-in-out;
-            color: #ffff;
+            color: #ff10b0!important;
           }
 
           padding: 5px;

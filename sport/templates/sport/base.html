@@ -12,29 +12,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <title>{% block title %}123{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'sport/css/style1.css' %}">
+    {% block link %}{% endblock %}
+    <link rel="stylesheet" href="{% static 'sport/css/style.css' %}">
 </head>
 <body>
 
 
 <header class="header">
-
     <div class="navigate">
         {% include 'sport/component/navbar.html' %}
     </div>
-    <div class="header__body">
-        <div class="container">
-            <h1>wind power</h1>
-            <h2>Lorem, ipsum & dolor</h2>
-            <a href="#">learn more</a>
-        </div>
-    </div>
+    {% block header_home %}{% endblock %}
 </header>
 
 
-{% block content %}
-
-{% endblock %}
+{% block content %}{% endblock %}
 
 
 <div class="footer">

@@ -1,0 +1,64 @@
+{% extends 'sport/base.html' %}
+{% load static %}
+{% block title %}Blog{% endblock %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'sport/css/blog.css' %}">
+{% endblock %}
+{% block content %}
+    <section class="blog_main">
+
+        <section class="blog">
+            <div class="container">
+                <div class="blog__title">
+                    <h2>blog</h2>
+                </div>
+            </div>
+        </section>
+        <section class="blog__body">
+            <div>
+                <div class="container">
+                    <div class="blog__body_top">
+                        <h2>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse congue tincidunt mo
+                        </h2>
+                        <span>10/02/2014 by <a href="#">10/02/2014 by </a></span>
+                        <span><a href="#"> 147 comments  </a> & 510 shares</span>
+                        <p>
+                            In nec turpis sem. Ut pharetra erat justo, vitae dapibus ante laoreet nec. Vestibulum
+                            dapibus
+                            ante eu viverra tristique. Nunc massa leo, vulputate a ipsum sit amet, eleifend feugiat
+                            odio.
+                            Integer at massa vel ligula placerat sollicitudin ut nec sapien. Etiam aliquet nulla a nulla
+                            lobortis tincidunt. Suspendisse elementum suscipit vulputate. Vestibulum ante ipsum primis
+                            in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam luctus mollis augue, at
+                            tempor
+                            nibh imperdiet et. In pellentesque ante sit amet sapien elementum.
+                        </p>
+                        <button>continue reading</button>
+                    </div>
+                    <div class="blog__body_end">
+                        <h2>
+                            Praesent sit amet nisl scelerisque, convallis mauris sed, molestie leo
+                        </h2>
+                        <span>10/02/2014 by <a href="#">10/02/2014 by </a></span>
+                        <span><a href="#"> 214 comments  </a> & 310 shares</span>
+                        <p>
+                            Nullam et vulputate felis. Fusce malesuada lectus lectus, vitae fringilla sem laoreet id.
+                            Maecenas non leo ut magna auctor congue eu non eros. Phasellus non quam lobortis, tempus
+                            eros
+                            venenatis, ullamcorper purus. Nam adipiscing, ipsum nec hendrerit vulputate, mauris enim
+                            pretium
+                            metus, a laoreet nunc leo nec nunc. Vestibulum vel convallis ipsum, a mollis sem. Fusce
+                            pharetra
+                            rhoncus interdum. Integer eleifend, nisl ultricies pellentesque lobortis, orci neque auctor
+                            risus, eu lacinia neque felis eu nulla. Sed ut tempus felis.
+                        </p>
+                        <button>continue reading</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+{% endblock %}

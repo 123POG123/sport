@@ -1,11 +1,14 @@
 @import "variable";
+@import "blog";
 @import "reset";
-@import "normalize";
 @import "header";
 @import "navbar";
 @import "footer";
-@import "home";
+@import "normalize";
+@import "contact";
+@import "services";
 @import "about_us";
+@import "home";
 
 
 .container {
@@ -17,15 +20,16 @@
 body {
   margin: 0;
   color: #fff;
-  display: flex;
-  flex-direction: column;
+  //background-color: #1e3cd2;
   min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 10fr  auto;
 
   .header {
-    flex-grow: 1;
+    //flex-grow: 1;
   }
 
   .footer {
-    flex-shrink: 0;
+    //flex-shrink: 0;
   }
 }

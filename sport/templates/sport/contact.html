@@ -1,0 +1,50 @@
+{% extends 'sport/base.html' %}
+{% load static %}
+{% block title %}Blog{% endblock %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'sport/css/contact1.css' %}">
+{% endblock %}
+{% block content %}
+    <section class="contact">
+        <div class="contact__title">
+            <div class="container">
+                <div class="title__inner">
+                    <h2>contact</h2>
+                </div>
+            </div>
+        </div>
+        <div class="contact__form">
+            <div class="container">
+                <div class="form_new_title">
+                    <h2>
+                        Keep in touch
+                    </h2>
+                </div>
+                <div class="form_body">
+                    <div class="body__top">
+                        <p>
+                            In nec turpis sem. Ut pharetra erat justo, vitae dapibus ante laoreet nec. Vestibulum
+                            dapibus
+                            ante eu viverra tristique. Nunc massa leo, vulputate a ipsum sit amet, eleifend feugiat
+                            odio.
+                        </p>
+                        <p>contact@whitesqrtemp.com</p>
+                        <ul class="body_inner">
+                            <li class="body_list">555 Lorem Ipsum Ave</li>
+                            <li class="body_list">Lipsum City, 00000</li>
+                            <li class="body_list">Country</li>
+                        </ul>
+                    </div>
+                    <div class="form_main">
+                        <form action="" method="post">
+                            <input type="text" placeholder="full name (focused)">
+                            <input type="email" placeholder="E-mail">
+                            <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+                            <input class="butto_n" type="submit" value="send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

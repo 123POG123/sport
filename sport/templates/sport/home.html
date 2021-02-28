@@ -1,6 +1,9 @@
 {% extends 'sport/base.html' %}
 {% load static %}
 {% block title %}Home{% endblock %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'sport/css/home.css' %}">
+{% endblock %}
 {% block content %}
     <section class="body__t_op">
         <div class="container">
@@ -70,4 +73,13 @@
             </div>
         </div>
     </section>
+{% endblock %}
+{% block header_home %}
+  <div class="header__body">
+        <div class="container">
+            <h1>wind power</h1>
+            <h2>Lorem, ipsum & dolor</h2>
+            <a href="#">learn more</a>
+        </div>
+    </div>
 {% endblock %}

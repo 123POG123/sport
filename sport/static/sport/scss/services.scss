@@ -1,0 +1,110 @@
+@import 'variable';
+
+.services {
+  .services__title {
+    @include name_header;
+
+    .container {
+      h2 {
+        @include name_h2
+      }
+    }
+  }
+
+  .services__body {
+    .container {
+      .body__top {
+        h2 {
+          font-size: 40px;
+          text-transform: uppercase;
+          color: #16a085;
+          text-align: center;
+          padding: 40px 0 30px 0;
+        }
+
+        p {
+          text-align: center;
+          @include p_p;
+          font-size: 16px;
+        }
+
+        .body__btn {
+          padding: 40px 0;
+          max-height: 260px;
+          display: flex;
+
+          div {
+            width: 49%;
+
+          }
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+
+          .btn__list {
+            padding-top: 8px;
+            padding-left: 75px;
+
+            li {
+              position: relative;
+
+              &:before {
+                position: absolute;
+                content: '';
+                left: -18px;
+                top: 10px;
+                width: 8px;
+                height: 8px;
+                background-color: cadetblue;
+                display: inline-block;
+              }
+
+              p {
+                text-align: initial;
+                @include p_p;
+                line-height: 28px;
+              }
+
+              color: #16a085;
+
+              &:last-child {
+                padding-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .services__btn {
+    background-color: #ecf0f1;
+
+    .container {
+      .btn__body {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+          text-align: center;
+          width: 30%;
+
+          h2 {
+            padding-bottom: 20px;
+            font-size: 32px;
+            color: #2c3e50;
+            text-transform: uppercase;
+            font-family: $sans;
+          }
+
+          p {
+            @include p_p;
+          }
+        }
+      }
+    }
+  }
+}

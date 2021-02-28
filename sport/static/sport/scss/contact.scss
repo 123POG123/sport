@@ -1,0 +1,112 @@
+@import 'variable';
+
+.contact {
+
+  .contact__title {
+    @include name_header;
+
+    .container {
+      .title__inner {
+        h2 {
+          @include name_h2;
+        }
+      }
+    }
+  }
+
+  .contact__form {
+    padding: 50px 0 40px 0;
+
+    .container {
+      .form_new_title {
+        h2 {
+          font-size: 40px;
+          color: #16a085;
+          text-transform: uppercase;
+          font-family: $sans;
+          padding-bottom: 20px;
+        }
+      }
+
+
+      .form_body {
+        display: flex;
+
+        div {
+          width: 48%;
+        }
+
+        .body__top {
+          padding-right: 2%;
+          box-sizing: border-box;
+
+          p {
+            @include p_p;
+            padding: 10px 0;
+          }
+
+          ul {
+            li {
+              @include p_p;
+              padding-top: 7px;
+
+            }
+          }
+        }
+
+        .form_main {
+          input {
+            outline: none;
+            padding-left: 20px;
+            height: 35px;
+            box-sizing: border-box;
+            border: 1px solid transparent;
+            width: 99.5%;
+            background-color: #ecf0f1;
+
+            &:hover {
+              border: 1px solid #8acfc2;
+            }
+
+            &:nth-child(2) {
+              margin: 15px 0;
+            }
+          }
+
+          .butto_n {
+            margin-top: 10px;
+            padding-left: 0;
+            width: 16%;
+            background-color: transparent;
+            color: #8acfc2;
+            border: 1px solid #8acfc2;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-family: $sans;
+              transition: .4s ease-in-out;
+            &:hover{
+              background-color:#8acfc2 ;
+              color: #ffffff;
+              transition: .4s ease-in-out;
+            }
+
+          }
+
+          textarea {
+            outline: none;
+            border: 1px solid transparent;
+            padding: 20px 0 0 20px;
+            background-color: #ecf0f1;
+            width: 100%;
+            resize: none;
+            box-sizing: border-box;
+
+            &:hover {
+              border: 1px solid #8acfc2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
